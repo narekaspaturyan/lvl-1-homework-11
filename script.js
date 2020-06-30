@@ -93,10 +93,10 @@ async function search() {
         let check = false
         let elem;
 
-        moreInfo.addEventListener('click', () => {
+        moreInfo.addEventListener('click', (target) => {
 
             if (check === false) {
-                moreInfo.style.display = "none"
+
                 elem = document.createElement("div")
                 elem.classList.add("moreInfoListener")
                 temp.appendChild(elem)
@@ -124,11 +124,17 @@ async function search() {
 
         log(data)
 
-
     } catch {
         err => log(err.message)
     }
 }
+
+
+
+
+
+
+
 
 function seasonDef(se) {
     switch (se) {
