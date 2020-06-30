@@ -96,6 +96,7 @@ async function search() {
         moreInfo.addEventListener('click', () => {
 
             if (check === false) {
+                moreInfo.style.display = "none"
                 elem = document.createElement("div")
                 elem.classList.add("moreInfoListener")
                 temp.appendChild(elem)
